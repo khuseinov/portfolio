@@ -1,15 +1,4 @@
 import styled from 'styled-components'
-export const Container = styled.div`
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
-	hight: 100px;
-	background-color: var(--bg-color);
-	transform: translateY(0px);
-	transition: var(--transition);
-`
 
 export const Content = styled.div`
 	height: 100%;
@@ -147,5 +136,45 @@ export const NavButton = styled.button`
 
 	&:hover {
 		background-color: var(--accent-glow-color);
+	}
+`
+export const NavText = styled.div`
+	color: var(--accent-color);
+	font-size: 13px;
+
+	@media screen and (max-width: 840px) {
+		font-size: 14px;
+	}
+`
+
+export const Container = styled.div<{
+	isScrolled: boolean
+	isHidden: boolean
+}>`
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	height: 60px;
+	background-color: var(--bg-color);
+	transform: translateY(0px);
+	transition: var(--transition);
+
+	${({ isHidden }) => (isHidden ? '&' : '&:not(&)')} {
+		transform: translateY(-100px);
+
+		@media screen and (max-width: 840px) {
+			${Nav} {
+				transform: translateY(100px);
+			}
+		}
+	}
+
+	${({ isScrolled }) => (isScrolled ? '&' : '&:not(&)')} {
+		height: 70px;
+		box-shadow: 0 10px 30px -10px var(--shadow-color);
+		background-color: var(--bg-low-opacity-color);
+		backdrop-filter: blur(10px);
 	}
 `

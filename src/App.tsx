@@ -10,7 +10,6 @@ const App: FC = () => {
 			<Header />
 			<Main />
 			<Footer />
-			App
 			<GlobalStyles />
 		</div>
 	)
