@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useRef } from 'react'
 import {
 	Container,
 	Content,
@@ -12,25 +12,6 @@ import {
 } from './styled'
 
 const Header: FC = () => {
-	// Hiding and showing header on scroll
-	const [isHidden, setIsHidden] = useState<boolean>(false)
-	const [scrollHeight, setScrollHeight] = useState<number>(window.scrollY)
-	useEffect(() => {
-		const scrollHandler = () => {
-			setIsHidden(
-				window.scrollY > scrollHeight ||
-					window.scrollY + window.innerHeight >=
-						document.documentElement.scrollHeight
-			)
-			setScrollHeight(window.scrollY)
-		}
-
-		document.addEventListener('scroll', scrollHandler)
-		return (): void => {
-			document.removeEventListener('scroll', scrollHandler)
-		}
-	}, [scrollHeight])
-
 	const navItems = [
 		{
 			ref: useRef(null),
@@ -55,7 +36,7 @@ const Header: FC = () => {
 	]
 
 	return (
-		<Container isScrolled={scrollHeight > 0} isHidden={isHidden}>
+		<Container>
 			<Content>
 				<LogoWrap href='/'>
 					<svg
