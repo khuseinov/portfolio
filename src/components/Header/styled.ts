@@ -13,17 +13,19 @@ export const Content = styled.div`
 
 	@media screen and (max-width: 1080px) {
 		padding: 0 40px;
+		height: 75px;
 	}
 
 	@media screen and (max-width: 840px) {
 		padding: 0 25px;
+		height: 65px;
 	}
 `
 
-export const LogoWrap = styled.a`
+export const Logo = styled.a`
 	position: relative;
 	z-index: 100;
-	height: 42px;
+	height: 454px;
 	width: 42px;
 
 	&:hover > svg > polygon {
@@ -75,7 +77,7 @@ export const NavList = styled.ul`
 		overflow-y: auto;
 	}
 `
-export const NavItem = styled.li`
+export const NavItems = styled.li`
 	margin: 0 5px;
 
 	@media screen and (max-width: 840px) {
@@ -114,38 +116,38 @@ export const NavLink = styled.a`
 		text-align: center;
 	}
 `
-export const NavButton = styled.button`
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
-	padding: 0.75rem 1rem;
-	margin-left: 15px;
-	border: 1px solid var(--accent-color);
-	border-radius: var(--border-radius);
-	background-color: transparent;
-	outline: none;
-	cursor: pointer;
-	transition: background-color 0.25s ease-in-out;
-	font-family: inherit;
+// export const NavButton = styled.button`
+// 	display: flex;
+// 	flex-flow: row nowrap;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 0.75rem 1rem;
+// 	margin-left: 15px;
+// 	border: 1px solid var(--accent-color);
+// 	border-radius: var(--border-radius);
+// 	background-color: transparent;
+// 	outline: none;
+// 	cursor: pointer;
+// 	transition: background-color 0.25s ease-in-out;
+// 	font-family: inherit;
 
-	@media screen and (max-width: 840px) {
-		margin-left: 0;
-		padding: 13px 30px;
-	}
+// 	@media screen and (max-width: 840px) {
+// 		margin-left: 0;
+// 		padding: 13px 30px;
+// 	}
 
-	&:hover {
-		background-color: var(--accent-glow-color);
-	}
-`
-export const NavText = styled.div`
-	color: var(--accent-color);
-	font-size: 13px;
+// 	&:hover {
+// 		background-color: var(--accent-glow-color);
+// 	}
+// `
+// export const NavText = styled.div`
+// 	color: var(--accent-color);
+// 	font-size: 13px;
 
-	@media screen and (max-width: 840px) {
-		font-size: 14px;
-	}
-`
+// 	@media screen and (max-width: 840px) {
+// 		font-size: 14px;
+// 	}
+// `
 
 export const Container = styled.div`
 	position: fixed;

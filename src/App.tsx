@@ -1,19 +1,14 @@
 import { FC } from 'react'
-import { GlobalStyles } from './Global'
+import { GlobalStyles } from './GlobalStyle'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import About from './components/Main/About/About'
-import Hero from './components/Main/Hero/Hero'
-import { Main } from './components/Main/styled'
+import Main from './components/Main/Main'
 
 const App: FC = () => {
 	return (
 		<div>
 			<Header />
-			<Main>
-				<Hero />
-				<About />
-			</Main>
+			<Main />
 			<Footer />
 			<GlobalStyles />
 		</div>

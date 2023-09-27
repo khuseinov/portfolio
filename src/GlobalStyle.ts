@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
 	:root{
-		--transition: all 0.25s ease-in-out;
+		--transition: all 0.5s ease-in-out;
 
     --bg-loading-color: rgb(2,12,27);
     --bg-color: rgb(10, 25, 47);  // 40, 44, 52

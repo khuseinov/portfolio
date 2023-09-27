@@ -1,11 +1,11 @@
 import { FC } from 'react'
 import {
-	Button,
 	Container,
 	Description,
+	OpenResume,
 	Prefix,
 	PrimaryTitle,
-	SecondaryTitle,
+	SecondTitle,
 } from './styled'
 
 const Hero: FC = () => {
@@ -19,18 +19,20 @@ const Hero: FC = () => {
 				<h1>Rustam Khuseinov.</h1>
 			</PrimaryTitle>
 
-			<SecondaryTitle>
+			<SecondTitle>
 				<h2>I am a front-end developer.</h2>
-			</SecondaryTitle>
+			</SecondTitle>
 
 			<Description>
 				<div>
-					I specialize in creating web applications that not only have high
-					performance and clean code, but also provide an exceptional user
-					experience.
+					I’m specialized in building Web application. I also love designing
+					them to create vibrant UI experiences. In the past few month I focused
+					on personal project to upgrade my skills and be more efficiant.
 				</div>
 			</Description>
-			<Button href='#contact'>Contact me</Button>
+			<OpenResume onClick={() => window.open('/public/resume.pdf', '_blank')}>
+				Download my resume !
+			</OpenResume>
 		</Container>
 	)
 }

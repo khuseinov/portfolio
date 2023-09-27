@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { Section } from '../../Sections'
+import { SectionStyle } from '../styled'
 
-export const Container = styled(Section)`
+export const Container = styled(SectionStyle)`
 	min-height: 100vh;
 	display: flex;
 	flex-flow: column nowrap;
@@ -36,7 +36,7 @@ export const PrimaryTitle = styled.div`
 	color: var(--text-color-white);
 	margin-bottom: 10px;
 `
-export const SecondaryTitle = styled.div`
+export const SecondTitle = styled.div`
 	font-size: clamp(32px, 5.4vw, 45px);
 	font-weight: 700;
 	line-height: 1.1;
@@ -47,7 +47,7 @@ export const Description = styled.div`
 	max-width: 500px;
 	margin-bottom: 40px;
 `
-export const Button = styled.a`
+export const OpenResume = styled.a`
 	font-family: var(--font-monospace);
 	color: var(--accent-color);
 	font-size: 14px;
@@ -55,6 +55,7 @@ export const Button = styled.a`
 	border: 1px solid var(--accent-color);
 	border-radius: var(--border-radius);
 	transition: var(--transition);
+	cursor: pointer;
 
 	&:hover {
 		background-color: var(--accent-glow-color);

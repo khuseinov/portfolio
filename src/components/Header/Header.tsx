@@ -2,13 +2,11 @@ import { FC, useRef } from 'react'
 import {
 	Container,
 	Content,
-	LogoWrap,
+	Logo,
 	Nav,
-	NavButton,
-	NavItem,
+	NavItems,
 	NavLink,
 	NavList,
-	NavText,
 } from './styled'
 
 const Header: FC = () => {
@@ -38,7 +36,7 @@ const Header: FC = () => {
 	return (
 		<Container>
 			<Content>
-				<LogoWrap href='/'>
+				<Logo href='/'>
 					<svg
 						width='84'
 						height='96'
@@ -58,20 +56,18 @@ const Header: FC = () => {
 						/>
 						<polygon points='42,3 3,25 3,70 42,93 81,71 81,26 '></polygon>
 					</svg>
-				</LogoWrap>
+				</Logo>
 				<Nav>
 					<NavList>
 						{navItems.map(({ ref, href, text }, idx) => (
-							<NavItem ref={ref} key={idx}>
+							<NavItems ref={ref} key={idx}>
 								<NavLink href={href}>{text}</NavLink>
-							</NavItem>
+							</NavItems>
 						))}
 					</NavList>
-					<NavButton
-						onClick={() => window.open('/public/resume.pdf', '_blank')}
-					>
+					{/* <NavButton>
 						<NavText>Resume</NavText>
-					</NavButton>
+					</NavButton> */}
 				</Nav>
 			</Content>
 		</Container>
