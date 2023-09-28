@@ -28,15 +28,15 @@ export const Logo = styled.a`
 	height: 454px;
 	width: 42px;
 
-	&:hover > svg > polygon {
-		fill: var(--accent-glow-color);
-	}
-
 	svg {
 		display: block;
 		width: 100%;
 		height: 100%;
 		transition: var(--transition);
+
+		&:hover {
+			fill: var(--accent-glow-color);
+		}
 	}
 `
 

@@ -56,6 +56,7 @@ export const OpenResume = styled.a`
 	border-radius: var(--border-radius);
 	transition: var(--transition);
 	cursor: pointer;
+	background-color: var(--bg-color);
 
 	&:hover {
 		background-color: var(--accent-glow-color);

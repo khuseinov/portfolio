@@ -78,7 +78,6 @@ export const Image = styled.div`
 		border-radius: var(--border-radius);
 		border: 2px solid var(--accent-color);
 		transition: var(--transition);
-
 		z-index: -1;
 	}
 

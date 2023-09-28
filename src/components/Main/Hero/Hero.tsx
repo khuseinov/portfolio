@@ -31,7 +31,7 @@ const Hero: FC = () => {
 				</div>
 			</Description>
 			<OpenResume onClick={() => window.open('/public/resume.pdf', '_blank')}>
-				Download my resume !
+				Resume
 			</OpenResume>
 		</Container>
 	)

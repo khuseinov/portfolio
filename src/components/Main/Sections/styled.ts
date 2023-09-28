@@ -28,10 +28,11 @@ export const Container = styled.h1`
     display: block;
     position: relative;
     top: 5px;
-    width: 425px;
+    width: 325px;
     height: 0.5px;
     margin-left: 20px;
-    background-color: var( --bg-brightest-light-color);
+    background-color: var( --accent-color);
+		opacity: .5;
 }
 	}
 `
