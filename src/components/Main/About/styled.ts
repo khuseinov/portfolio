@@ -67,6 +67,10 @@ export const Image = styled.div`
 		flex: 0 0 70%;
 	}
 
+	@media screen and (max-width: 640px) {
+		flex: 0 0 90%;
+	}
+
 	&::after {
 		content: '';
 		display: block;
