@@ -9,7 +9,7 @@ export const TechSkillsContent = styled.div`
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
-	gap: 50px;
+	gap: 150px;
 
 	@media screen and (max-width: 480px) {
 		flex-flow: row wrap;
