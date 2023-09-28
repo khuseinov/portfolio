@@ -2,8 +2,23 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
 	:root{
-		--transition: all 0.5s ease-in-out;
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      margin:5px;
+    }
 
+    ::-webkit-scrollbar-thumb{
+      background: var(--accent-color);    
+      border-radius:10px;  
+      border:1px solid var(--bg-brightest-light-color);
+    }
+
+   
+
+
+		--transition: all 0.2s ease-in-out;
     --bg-loading-color: rgb(2,12,27);
     --bg-color: rgb(10, 25, 47);  // 40, 44, 52
     --bg-low-opacity-color: rgba(10, 25, 47, 0.8);
@@ -65,5 +80,7 @@ export const GlobalStyles = createGlobalStyle`
       color: var(--accent-color);
     }
   }
-
+  ::webkit-scrollbar {
+    width: 15px;
+  }
 `

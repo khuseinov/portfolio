@@ -53,33 +53,48 @@ export const Image = styled.div`
 	max-width: 300px;
 	position: relative;
 	border-radius: var(--border-radius);
+	top: 5px;
+	left: 5px;
+	transition: var(--transition);
+
+	&:hover {
+		top: 0px;
+		left: 0px;
+		transition: var(--transition);
+	}
+
+	@media screen and (max-width: 840px) {
+		flex: 0 0 70%;
+	}
 
 	&::after {
 		content: '';
 		display: block;
 		position: absolute;
-		top: 4%;
-		left: 4%;
-		width: 100%;
-		height: 100%;
-		border: 2px solid var(--accent-color);
+		top: 15px;
+		left: 15px;
+		width: 290px;
+		height: 290px;
 		border-radius: var(--border-radius);
+		border: 2px solid var(--accent-color);
 		transition: var(--transition);
+
 		z-index: -1;
 	}
 
 	&:hover::after {
-		top: 2%;
-		left: 2%;
+		top: 8%;
+		left: 8%;
 	}
 	z-index: 10;
 
 	> div {
+		position: relative;
 		width: 100%;
 		height: 100%;
 		will-change: opacity;
 		background-color: var(--accent-color);
-		border-radius: var(--border-radius);
+		border-radius: 6px;
 		transition: var(--transition);
 		cursor: pointer;
 
@@ -92,7 +107,7 @@ export const Image = styled.div`
 			padding-top: 100%;
 			position: relative;
 			overflow: hidden;
-			// border-radius: var(--border-radius);
+			border-radius: 5px;
 			filter: grayscale(1);
 			transition: var(--transition);
 			mix-blend-mode: multiply;
