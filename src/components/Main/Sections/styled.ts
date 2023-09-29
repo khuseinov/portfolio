@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.h1`
+export const Container = styled.h2`
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;

@@ -159,6 +159,8 @@ export const Container = styled.div`
 	background-color: var(--bg-color);
 	transform: translateY(0px);
 	transition: var(--transition);
+	z-index: 100;
+
 	// height: 70px;
 	// box-shadow: 0 10px 30px -10px var(--shadow-color);
 	// background-color: var(--bg-low-opacity-color);
