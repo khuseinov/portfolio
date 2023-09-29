@@ -9,7 +9,7 @@ export const Content = styled.div`
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	gap: 50px;
+
 	@media screen and (max-width: 840px) {
 		flex-flow: row wrap;
 		justify-content: center;
@@ -17,8 +17,7 @@ export const Content = styled.div`
 `
 
 export const PrimaryDescription = styled.div`
-	margin: 0 0 15px;
-	width: 620px;
+	margin-bottom: 20px;
 `
 
 export const UnderlinedReference = styled.a`
@@ -43,9 +42,20 @@ export const UnderlinedReference = styled.a`
 	}
 `
 
-export const SecondDescription = styled.div`
-	margin: 0 0 15px;
-	width: 620px;
+// export const SecondDescription = styled.div`
+// 	margin: 0 0 15px;
+// 	width: 620px;
+// `
+
+export const Text = styled.div`
+	flex: 1 0 calc((100% - 50px) * 0.6);
+	margin-right: 50px;
+
+	@media screen and (max-width: 840px) {
+		flex: 1 1 auto;
+		margin-right: 0px;
+		margin-bottom: 50px;
+	}
 `
 
 export const Image = styled.div`
@@ -64,11 +74,7 @@ export const Image = styled.div`
 	}
 
 	@media screen and (max-width: 840px) {
-		flex: 0 0 70%;
-	}
-
-	@media screen and (max-width: 640px) {
-		flex: 0 0 90%;
+		flex: 0 0 100%;
 	}
 
 	&::after {

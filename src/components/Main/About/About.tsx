@@ -5,7 +5,7 @@ import {
 	Content,
 	Image,
 	PrimaryDescription,
-	SecondDescription,
+	Text,
 	UnderlinedReference,
 } from './styled'
 
@@ -16,21 +16,21 @@ const About: FC = () => {
 		<Container id='about'>
 			<SecondTitle name='About me' />
 			<Content>
-				<div>
+				<Text>
 					<PrimaryDescription>
 						Hey! My name is Rustam Khuseinov, I'm a front-end developer from
 						{'  '}
 						<UnderlinedReference href=''>Kazan, Russia</UnderlinedReference>
 					</PrimaryDescription>
 
-					<SecondDescription>
+					<PrimaryDescription>
 						My passion for IT and programming started in school and I enjoy
 						creating creative and interactive user interfaces. My goal is to
 						create products that combine functionality and visual appeal. It is
 						important to me that users not only easily use the products I
 						develop, but also enjoy the process.
-					</SecondDescription>
-				</div>
+					</PrimaryDescription>
+				</Text>
 
 				<Image>
 					<div>
