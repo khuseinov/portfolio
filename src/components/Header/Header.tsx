@@ -1,5 +1,6 @@
-import { FC, useRef } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import {
+	Burger,
 	Container,
 	Content,
 	Logo,
@@ -7,9 +8,39 @@ import {
 	NavItems,
 	NavLink,
 	NavList,
+	Overlay,
 } from './styled'
 
 const Header: FC = () => {
+	// Show and hide sidebar
+	const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>(false)
+	const hideSidebar = () => {
+		setIsSidebarVisible(false)
+	}
+	const showSidebar = () => {
+		setIsSidebarVisible(true)
+	}
+	// Hide sidebar when switching to desktop mode
+	useEffect(() => {
+		const resizeHandler = () => {
+			if (window.innerWidth > 768 && isSidebarVisible) {
+				hideSidebar()
+			}
+		}
+
+		window.addEventListener('resize', resizeHandler)
+		return (): void => {
+			window.removeEventListener('resize', resizeHandler)
+		}
+	}, [isSidebarVisible])
+
+	const [isMounted, setIsMounted] = useState<boolean>(false)
+	useEffect(() => {
+		setTimeout(() => setIsMounted(true), 100)
+	}, [])
+
+	const burgerRef = useRef(null)
+
 	const navItems = [
 		{
 			ref: useRef(null),
@@ -34,7 +65,7 @@ const Header: FC = () => {
 	]
 
 	return (
-		<Container>
+		<Container isSidebarVisible={isSidebarVisible}>
 			<Content>
 				<Logo href='/'>
 					<svg
@@ -57,6 +88,16 @@ const Header: FC = () => {
 						<polygon points='42,3 3,25 3,70 42,93 81,71 81,26 '></polygon>
 					</svg>
 				</Logo>
+				{isMounted && (
+					<Burger
+						ref={burgerRef}
+						onClick={isSidebarVisible ? hideSidebar : showSidebar}
+					>
+						<div />
+						<div />
+						<div />
+					</Burger>
+				)}
 				<Nav>
 					<NavList>
 						{navItems.map(({ ref, href, text }, idx) => (
@@ -69,6 +110,7 @@ const Header: FC = () => {
 						<NavText>Resume</NavText>
 					</NavButton> */}
 				</Nav>
+				<Overlay onClick={() => hideSidebar()} />
 			</Content>
 		</Container>
 	)

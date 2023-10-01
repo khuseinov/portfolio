@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Content = styled.div`
+export const Content = styled.nav`
 	height: 100%;
 	width: 100%;
 	padding: 0px 50px;
@@ -61,6 +61,45 @@ export const Nav = styled.div`
 		box-shadow: -10px 0 30px -15px var(--shadow-color);
 		visibility: hidden;
 		transition: var(--transition);
+	}
+`
+
+export const Burger = styled.div`
+	display: none;
+	justify-content: space-around;
+	flex-flow: column nowrap;
+	gap: 5.1px;
+	width: 2rem;
+	height: 1rem;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+
+	@media screen and (max-width: 840px) {
+		display: flex;
+	}
+
+	div {
+		border-radius: 10px;
+		width: 22px;
+		height: 100%;
+		background-color: var(--accent-color);
+		transform-origin: 1px;
+		transition: all 0.3s linear;
+
+		&:nth-child(1) {
+			transform: rotate(0);
+		}
+
+		&:nth-child(2) {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		&:nth-child(3) {
+			transform: rotate(0);
+		}
 	}
 `
 
@@ -148,8 +187,18 @@ export const NavLink = styled.a`
 // 		font-size: 14px;
 // 	}
 // `
-
-export const Container = styled.div`
+export const Overlay = styled.div`
+	display: none;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+`
+export const Container = styled.header<{
+	isSidebarVisible: boolean
+}>`
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -160,6 +209,43 @@ export const Container = styled.div`
 	transform: translateY(0px);
 	transition: var(--transition);
 	z-index: 100;
+
+	${({ isSidebarVisible }) => (isSidebarVisible ? '&' : '&:not(&)')} {
+		@media screen and (max-width: 840px) {
+			backdrop-filter: none;
+
+			& ~ * {
+				filter: blur(5px) brightness(0.7);
+			}
+
+			${Overlay} {
+				display: block;
+			}
+
+			${Nav} {
+				right: 0;
+				visibility: visible;
+			}
+
+			${Burger} {
+				z-index: 50;
+				div {
+					&:nth-child(1) {
+						transform: rotate(45deg);
+					}
+
+					&:nth-child(2) {
+						transform: translateX(100%);
+						opacity: 0;
+					}
+
+					&:nth-child(3) {
+						transform: rotate(-45deg);
+					}
+				}
+			}
+		}
+	}
 
 	// height: 70px;
 	// box-shadow: 0 10px 30px -10px var(--shadow-color);

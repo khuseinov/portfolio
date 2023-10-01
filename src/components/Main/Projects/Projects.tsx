@@ -46,7 +46,7 @@ const Projects: FC = () => {
 			<ProjectCard
 				image={ProductCard}
 				period='August 2023'
-				title='portfolio'
+				title='Product Cards'
 				description='A small web application with product cards, created by me. There are a variety of products presented here, each with detailed descriptions, images and prices. Users can easily browse and select products, add them to cart, and place orders.
 				'
 				technology={['React', 'Redux(Toolkit)', 'TypeScript', 'Tailwind']}
@@ -55,19 +55,19 @@ const Projects: FC = () => {
 			/>
 			<ProjectCard
 				image={OnlineStore}
-				period='September 2023'
-				title='portfolio'
-				description='small project asdkljas kldjaksld lsadk lakdl aksdl askdl;s ;akdl;a skdslad kasldk ldaks skd sl'
-				technology={['React', 'TypeScript']}
+				period='July - August 2023'
+				title='eCommerce App'
+				description='The project I developed is an online store in Vanilla JavaScript with a user-friendly interface, animation and the ability to interact in real time. It is important to note that this project was developed by me as part of an educational project.'
+				technology={['Vanilla JavaScript', 'Parcel', 'Vercel']}
 				gitHubLink='https://github.com/khuseinov/firebase-product-list'
 				link='https://khuseinov.github.io/firebase-product-list/src/'
 			/>
 			<ProjectCard
 				image={MetrikaImage}
-				period='September 2023'
-				title='portfolio'
-				description='small project asdkljas kldjaksld lsadk lakdl aksdl askdl;s ;akdl;a skdslad kasldk ldaks skd sl'
-				technology={['React', 'TypeScript']}
+				period='May - June 2023'
+				title='Metrika'
+				description='The Metrika Studio website provides inspiration for interior design, an online calculator for calculating project costs, and a portfolio with examples of successful studio work.'
+				technology={['Vanilla JavaScript', 'Vercel']}
 				gitHubLink='https://github.com/khuseinov/metrica'
 				link='https://khuseinov.github.io/metrica/'
 			/>

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import About from './About/About'
+import Contact from './Contact/Contact'
 import Hero from './Hero/Hero'
 import Projects from './Projects/Projects'
 import TechStacks from './TechStacks/TechStacks'
@@ -12,6 +13,7 @@ const Main: FC = () => {
 			<About />
 			<TechStacks />
 			<Projects />
+			<Contact />
 		</Container>
 	)
 }

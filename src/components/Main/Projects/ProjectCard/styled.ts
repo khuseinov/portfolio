@@ -198,11 +198,11 @@ export const Container = styled.div`
 	margin-bottom: 100px;
 	transition: var(--transition);
 
-	&${ImageWrap}:nth-child(2n) {
+	${ImageWrap}:nth-child(2n) {
 		order: 0;
 	}
 
-	&>${Content}:nth-child(2n) {
+	${Content}:nth-child(2n) {
 		order: 1;
 		right: 10%;
 		align-items: flex-end;
@@ -225,35 +225,4 @@ export const Container = styled.div`
 		}
 	}
 }
-}
-
-		&${ImageWrap}:nth-child(2n + 1) {
-			order: 1;
-			right: 10%;
-			@media screen and (max-width: 1080px) {
-				right: 20%;
-			}
-			@media screen and (max-width: 840px) {
-				right: 100%;
-			}
-
-		${Content}:nth-child(2n + 1) {
-			order: 0;
-			align-items: flex-start;
-			text-align: left;
-
-			${TechList} {
-				justify-content: flex-start;
-			}
-
-			${Tech} {
-				margin-right: 15px;
-			}
-		}
-}
-
-	@media screen and (max-width: 840px) {
-		align-items: flex-start;
-		margin-bottom: 70px;
-	}
 `
