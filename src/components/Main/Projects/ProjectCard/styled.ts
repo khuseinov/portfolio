@@ -198,29 +198,50 @@ export const Container = styled.div`
 	margin-bottom: 100px;
 	transition: var(--transition);
 
-	${ImageWrap}:nth-child(2n) {
-		order: 0;
-	}
-
-	${Content}:nth-child(2n) {
-		order: 1;
-		right: 10%;
-		align-items: flex-end;
-		text-align: right;
-
-		@media screen and (max-width: 1080px) {
-			right: 20%;
+	:nth-child(2n) {
+		&${ImageWrap} {
+			order: 0;
 		}
 
-		@media screen and (max-width: 840px) {
-			right: 100%;
-		}
+		&${Content} {
+			order: 1;
+			right: 10%;
+			align-items: flex-end;
+			text-align: right;
 
+			@media screen and (max-width: 1080px) {
+				right: 20%;
+			}
+
+			@media screen and (max-width: 840px) {
+				right: 100%;
+			}
+		}
 		${TechList} {
 			justify-content: flex-end;
+		}
+		${Tech} {
+			margin-left: 15px;
+		}
+	}
 
-			${Tech} {
-				margin-left: 15px;
+	&:nth-child(2n + 1) {
+		${ImageWrap} {
+			order: 1;
+		}
+
+		${Content} {
+			order: 0;
+			left: 10%;
+			align-items: flex-start;
+			text-align: left;
+
+
+			@media screen and (max-width: 1080px) {
+				left: 20%;
+			}
+			@media screen and (max-width: 840px) {
+				left: 100%;
 			}
 		}
 	}
