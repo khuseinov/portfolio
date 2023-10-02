@@ -1,4 +1,6 @@
 import { FC, useEffect, useRef, useState } from 'react'
+
+import { motion } from 'framer-motion'
 import {
 	Burger,
 	Container,
@@ -34,6 +36,25 @@ const Header: FC = () => {
 		}
 	}, [isSidebarVisible])
 
+	// Hiding and showing header on scroll
+	const [isHidden, setIsHidden] = useState<boolean>(false)
+	const [scrollHeight, setScrollHeight] = useState<number>(window.scrollY)
+	useEffect(() => {
+		const scrollHandler = () => {
+			setIsHidden(
+				window.scrollY > scrollHeight ||
+					window.scrollY + window.innerHeight >=
+						document.documentElement.scrollHeight
+			)
+			setScrollHeight(window.scrollY)
+		}
+
+		document.addEventListener('scroll', scrollHandler)
+		return (): void => {
+			document.removeEventListener('scroll', scrollHandler)
+		}
+	}, [scrollHeight])
+
 	const [isMounted, setIsMounted] = useState<boolean>(false)
 	useEffect(() => {
 		setTimeout(() => setIsMounted(true), 100)
@@ -64,10 +85,39 @@ const Header: FC = () => {
 		},
 	]
 
+	const headerAnimation = {
+		hidden: {
+			y: -20,
+			opacity: 0,
+		},
+		visible: {
+			y: 0,
+			opacity: 1,
+		},
+	}
+
 	return (
-		<Container isSidebarVisible={isSidebarVisible}>
-			<Content>
-				<Logo href='/'>
+		<Container
+			isScrolled={scrollHeight > 0}
+			isHidden={isHidden}
+			isSidebarVisible={isSidebarVisible}
+		>
+			<Content
+				as={motion.div}
+				variants={headerAnimation}
+				initial='hidden'
+				whileInView='visible'
+				viewport={{ amount: 0.2, once: true }}
+			>
+				<Logo
+					variants={headerAnimation}
+					as={motion.a}
+					transition={{
+						ease: 'linear',
+						delay: 0,
+					}}
+					href='/'
+				>
 					<svg
 						width='84'
 						height='96'
@@ -101,7 +151,17 @@ const Header: FC = () => {
 				<Nav>
 					<NavList>
 						{navItems.map(({ ref, href, text }, idx) => (
-							<NavItems ref={ref} key={idx}>
+							<NavItems
+								variants={headerAnimation}
+								as={motion.li}
+								transition={{
+									ease: 'easeInOut',
+									duration: 0.6,
+									delay: idx * 0.2,
+								}}
+								ref={ref}
+								key={idx}
+							>
 								<NavLink href={href}>{text}</NavLink>
 							</NavItems>
 						))}

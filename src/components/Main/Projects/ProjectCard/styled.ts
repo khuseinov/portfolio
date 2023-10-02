@@ -1,5 +1,5 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
-
 export const ImageWrap = styled.a`
 	display: block;
 	position: relative;
@@ -191,7 +191,7 @@ export const Link = styled.a`
 		fill: var(--accent-color);
 	}
 `
-export const Container = styled.div`
+export const Container = styled(motion.div)`
 	display: flex;
 	align-items: center;
 	position: relative;

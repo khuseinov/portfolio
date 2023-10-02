@@ -1,6 +1,8 @@
 import { FC, useEffect, useState } from 'react'
 import TagCloud from 'react-tag-cloud'
 import SecondTitle from '../Sections/Sections'
+
+import { motion } from 'framer-motion'
 import {
 	Cloud,
 	CloudWrapper,
@@ -22,6 +24,18 @@ function getPadding() {
 	} else {
 		return 15
 	}
+}
+
+const textAnimation = {
+	hidden: {
+		y: 0,
+		opacity: 0,
+	},
+	visible: (custom: number) => ({
+		y: 0,
+		opacity: 1,
+		transition: { ease: 'easeInOut', delay: custom * 0.1, duration: 1 },
+	}),
 }
 
 const TechStacks: FC = () => {
@@ -62,7 +76,15 @@ const TechStacks: FC = () => {
 		'Framer-Motion',
 	]
 	return (
-		<Container id='skills'>
+		<Container
+			id='skills'
+			as={motion.section}
+			variants={textAnimation}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			custom={1}
+		>
 			<SecondTitle name='My Technical Skills' />
 			<TechSkillsContent>
 				<Cloud>

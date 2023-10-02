@@ -198,13 +198,15 @@ export const Overlay = styled.div`
 `
 export const Container = styled.header<{
 	isSidebarVisible: boolean
+	isScrolled: boolean
+	isHidden: boolean
 }>`
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
-	height: 100px;
+	height: 70px;
 	background-color: var(--bg-color);
 	transform: translateY(0px);
 	transition: var(--transition);
@@ -247,8 +249,20 @@ export const Container = styled.header<{
 		}
 	}
 
-	// height: 70px;
-	// box-shadow: 0 10px 30px -10px var(--shadow-color);
-	// background-color: var(--bg-low-opacity-color);
-	// backdrop-filter: blur(10px);
+	&${({ isHidden }) => (isHidden ? '&' : '&:not(&)')} {
+		transform: translateY(-100px);
+
+		@media screen and (max-width: 840px) {
+			${Nav} {
+				transform: translateY(100px);
+			}
+		}
+
+		${({ isScrolled }) => (isScrolled ? '&' : '&:not(&)')} {
+			height: 70px;
+			box-shadow: 0 10px 30px -10px var(--shadow-color);
+			background-color: var(--bg-low-opacity-color);
+			backdrop-filter: blur(10px);
+		}
+	}
 `

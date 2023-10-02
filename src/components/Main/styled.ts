@@ -1,5 +1,5 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
-
 export const Container = styled.main`
 	padding: 0 150px;
 	transition: var(--transition);
@@ -17,7 +17,7 @@ export const Container = styled.main`
 	}
 `
 
-export const SectionStyle = styled.section`
+export const SectionStyle = styled(motion.section)`
 	margin: 0 auto;
 	max-width: 1000px;
 	padding-top: 100px;

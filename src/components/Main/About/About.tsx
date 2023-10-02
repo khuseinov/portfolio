@@ -9,11 +9,31 @@ import {
 	UnderlinedReference,
 } from './styled'
 
+import { motion } from 'framer-motion'
 import photo from '../../../assets/images/picture.webp'
+const textAnimation = {
+	hidden: {
+		y: 0,
+		opacity: 0,
+	},
+	visible: (custom: number) => ({
+		y: 0,
+		opacity: 1,
+		transition: { ease: 'easeInOut', delay: custom * 0.1, duration: 1 },
+	}),
+}
 
 const About: FC = () => {
 	return (
-		<Container id='about'>
+		<Container
+			id='about'
+			as={motion.section}
+			variants={textAnimation}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			custom={1}
+		>
 			<SecondTitle name='About me' />
 			<Content>
 				<Text>

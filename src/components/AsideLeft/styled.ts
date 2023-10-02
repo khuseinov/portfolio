@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.aside`
+import { motion } from 'framer-motion'
+export const Container = styled(motion.aside)`
 	position: fixed;
 	width: 40px;
 	left: 40px;
@@ -28,7 +29,7 @@ export const Container = styled.aside`
 	}
 `
 
-export const Icon = styled.a`
+export const Icon = styled(motion.a)`
 	padding: 10px;
 	cursor: pointer;
 

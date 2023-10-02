@@ -2,9 +2,29 @@ import { FC, useRef } from 'react'
 import { Container, Icon } from './styled'
 const AsideLeft: FC = () => {
 	const ref = useRef(null)
+
+	const iconAnimation = {
+		hidden: {
+			y: 0,
+			opacity: 0,
+		},
+		visible: (custom: number) => ({
+			y: 0,
+			opacity: 1,
+			transition: { delay: custom * 0.3, duration: 0.5 },
+		}),
+	}
 	return (
-		<Container ref={ref}>
+		<Container
+			variants={iconAnimation}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			ref={ref}
+		>
 			<Icon
+				custom={1}
+				variants={iconAnimation}
 				href='https://github.com/khuseinov'
 				title='GitHub'
 				target='_blank'
@@ -21,6 +41,8 @@ const AsideLeft: FC = () => {
 				</svg>
 			</Icon>
 			<Icon
+				custom={2}
+				variants={iconAnimation}
 				href='https://t.me/R_Khuseinov'
 				title='Telegram'
 				target='_blank'
@@ -37,6 +59,8 @@ const AsideLeft: FC = () => {
 				</svg>
 			</Icon>
 			<Icon
+				custom={3}
+				variants={iconAnimation}
 				href='https://wa.me/+79869273661'
 				title='WhatsApp'
 				target='_blank'
@@ -77,6 +101,8 @@ const AsideLeft: FC = () => {
 				</svg>
 			</Icon>
 			<Icon
+				custom={4}
+				variants={iconAnimation}
 				href='https://www.instagram.com/rustamjon.huseynov22'
 				title='Instagram'
 				target='_blank'

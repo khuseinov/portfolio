@@ -23,6 +23,18 @@ type TypeProjectCard = {
 	link?: string
 }
 
+const projectAnimation = {
+	hidden: {
+		y: 0,
+		opacity: 0,
+	},
+	visible: (custom: number) => ({
+		y: 0,
+		opacity: 1,
+		transition: { ease: 'easeInOut', delay: custom * 0.1, duration: 1 },
+	}),
+}
+
 const ProjectCard: FC<TypeProjectCard> = ({
 	image,
 	period,
@@ -33,7 +45,13 @@ const ProjectCard: FC<TypeProjectCard> = ({
 	link,
 }) => {
 	return (
-		<Container>
+		<Container
+			variants={projectAnimation}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			custom={1}
+		>
 			<ImageWrap href={link} target='_blank' rel='nofollow noopener noreferrer'>
 				<div>
 					<img src={image} alt='' />

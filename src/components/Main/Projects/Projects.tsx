@@ -39,7 +39,12 @@ const Projects: FC = () => {
 						my skills and achievements.
 					</p>
 				}
-				technology={['React', 'TypeScript', 'Styled Components']}
+				technology={[
+					'React',
+					'TypeScript',
+					'Styled Components',
+					'Framer Motion',
+				]}
 				gitHubLink='https://github.com/khuseinov/portfolio'
 				link='/'
 			/>
