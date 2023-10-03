@@ -53,7 +53,8 @@ const Hero: FC = () => {
 				as={motion.a}
 				custom={4}
 				variants={textAnimation}
-				onClick={() => window.open('/public/resume.pdf', '_blank')}
+				href='/public/resume.pdf'
+				target='_blank'
 			>
 				Resume
 			</OpenResume>
