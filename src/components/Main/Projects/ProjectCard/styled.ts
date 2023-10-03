@@ -228,24 +228,24 @@ export const Container = styled(motion.div)`
 	&:nth-child(2n + 1) {
 		${ImageWrap} {
 			order: 1;
-			right: 10%;
-
+			left: 40%;
 		}
 
 		${Content} {
-			order: 0;
-			left: 0;
+			order: 1;
+			right: 60%;
 			align-items: flex-start;
 			text-align: left;
 
 
-			@media screen and (max-width: 1080px) {
-				left: 20%;
-			}
+			// @media screen and (max-width: 1080px) {
+			// 	left: 20%;
+			// }
 
-			@media screen and (max-width: 840px) {
-				left: 100%;
-			}
+			// @media screen and (max-width: 840px) {
+			// 	left: -100%;
+			// }
+
 			${TechList} {
 				justify-content: flex-start;
 			}
@@ -256,7 +256,13 @@ export const Container = styled(motion.div)`
 
 			}
 		}
-	
+		@media screen and (max-width: 1080px) {
+					left: 20%;
+				}
+
+			@media screen and (max-width: 840px) {
+				left: -40%;
+			}
 		
 	}
 }
