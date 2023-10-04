@@ -53,7 +53,7 @@ const Hero: FC = () => {
 				as={motion.a}
 				custom={4}
 				variants={textAnimation}
-				href='resume.pdf'
+				href='myResume.pdf'
 				// download='myResume.pdf'
 				target='_blank'
 			>
