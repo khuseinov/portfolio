@@ -10,7 +10,7 @@ import {
 } from './styled'
 
 import { motion } from 'framer-motion'
-import photo from '../../../assets/images/picture.webp'
+import photo from '../../../assets/images/myPhoto.jpg'
 const textAnimation = {
 	hidden: {
 		y: 0,
