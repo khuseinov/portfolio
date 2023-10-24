@@ -74,6 +74,10 @@ const TechStacks: FC = () => {
 		'Vercel',
 		'Netlify',
 		'Framer-Motion',
+		'Jira',
+		'Trello',
+		'RTL',
+		'Tailwind',
 	]
 	return (
 		<Container
@@ -108,14 +112,15 @@ const TechStacks: FC = () => {
 						<TechText>TypeScript(Basic), JavaScript(ES6+)</TechText>
 						<TechText>React, Redux (Thunk,Toolkit)</TechText>
 						<TechText>HTML, CSS, SCSS/Sas</TechText>
-						<TechText>Styled-Components, Framer-Motion</TechText>
+						<TechText>Styled-Components, Framer-Motion, Tailwind </TechText>
 						<TechText>Webpack, Vite, Parcel</TechText>
+						<TechText>Jest, RTL</TechText>
 					</TechSkillGroup>
 					<TechSkillGroup>
 						<TechTitle>Tools & Platforms</TechTitle>
 						<TechText>Git, GitHub</TechText>
 						<TechText>Figma, Photoshop</TechText>
-						<TechText>Postman, Jest</TechText>
+						<TechText>Postman, Jira, Trello</TechText>
 						<TechText>Vercel, Netlify</TechText>
 					</TechSkillGroup>
 				</Text>
