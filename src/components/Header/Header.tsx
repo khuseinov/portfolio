@@ -70,6 +70,11 @@ const Header: FC = () => {
 		},
 		{
 			ref: useRef(null),
+			href: '#experience',
+			text: 'Experience',
+		},
+		{
+			ref: useRef(null),
 			href: '#skills',
 			text: 'Skills',
 		},

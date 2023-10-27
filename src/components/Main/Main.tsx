@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import About from './About/About'
 import Contact from './Contact/Contact'
+import Experience from './Experience/Experience'
 import Hero from './Hero/Hero'
 import Projects from './Projects/Projects'
 import TechStacks from './TechStacks/TechStacks'
@@ -11,6 +12,7 @@ const Main: FC = () => {
 		<Container>
 			<Hero />
 			<About />
+			<Experience />
 			<TechStacks />
 			<Projects />
 			<Contact />
