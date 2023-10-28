@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { FC, useState } from 'react'
 import { UnderlinedReference } from '../About/styled'
 import SecondTitle from '../Sections/Sections'
@@ -13,6 +14,18 @@ import {
 	TabsContainer,
 	Title,
 } from './styled'
+
+const textAnimation = {
+	hidden: {
+		y: 0,
+		opacity: 0,
+	},
+	visible: (custom: number) => ({
+		y: 0,
+		opacity: 1,
+		transition: { ease: 'easeInOut', delay: custom * 0.1, duration: 1 },
+	}),
+}
 
 const Experience: FC = () => {
 	const [selectedTab, setSelectedTab] = useState<number>(0)
@@ -91,7 +104,15 @@ const Experience: FC = () => {
 	]
 
 	return (
-		<Container id='experience'>
+		<Container
+			id='experience'
+			as={motion.section}
+			variants={textAnimation}
+			initial='hidden'
+			whileInView='visible'
+			viewport={{ amount: 0.2, once: true }}
+			custom={1}
+		>
 			<SecondTitle name='Experience' />
 			<Content>
 				<TabsContainer selectedTab={selectedTab}>
