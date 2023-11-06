@@ -44,7 +44,7 @@ const TechStacks: FC = () => {
 	useEffect(() => {
 		const timeout = setTimeout(() => {
 			setCurrentNumber(currentNumber => currentNumber + 1)
-		}, 3000)
+		}, 2000)
 
 		return () => {
 			clearTimeout(timeout)
@@ -109,9 +109,9 @@ const TechStacks: FC = () => {
 				<Text>
 					<TechSkillGroup>
 						<TechTitle>Front-end development</TechTitle>
-						<TechText>TypeScript(Basic), JavaScript(ES6+)</TechText>
+						<TechText>TypeScript, JavaScript(ES6+)</TechText>
 						<TechText>React, Redux (Thunk,Toolkit)</TechText>
-						<TechText>HTML, CSS, SCSS/Sas</TechText>
+						<TechText>HTML, CSS, SCSS/Sass</TechText>
 						<TechText>Styled-Components, Framer-Motion, Tailwind </TechText>
 						<TechText>Webpack, Vite, Parcel</TechText>
 						<TechText>Jest, RTL</TechText>

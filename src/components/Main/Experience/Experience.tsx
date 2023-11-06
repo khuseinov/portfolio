@@ -40,21 +40,22 @@ const Experience: FC = () => {
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						Created a UI-Kit consisting of reusable components to standardize
-						interfaces and speed up development.
+						Actively used TypeScript and React to optimize the performance and
+						stability of web applications.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Developing React components and interfaces using TypeScript to
-						improve application performance and stability.
+						Conducted a successful project migration process from using vanilla
+						HTML, CSS and JavaScript to more modern technologies, including
+						TypeScript, React and Styled Components.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Development of a stable and scalable code base with test coverage of
-						more than 85%, using tools such as Jest and React Testing Library.
+						Supported a set of components for the UI-Kit, which helped
+						standardize the design and speed up development.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Regularly collaborate with other team members, including designers
-						and backend developers, to ensure consistency and quality of
-						projects
+						Introduced updated technologies and design solutions for websites,
+						which simplified development and reduced the time spent on selecting
+						products and placing orders by more than 50%.
 					</DescriptionResponsibility>
 				</div>
 			),
