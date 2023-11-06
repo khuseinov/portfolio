@@ -40,17 +40,13 @@ const Experience: FC = () => {
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						Actively used TypeScript and React to optimize the performance and
-						stability of web applications.
-					</DescriptionResponsibility>
-					<DescriptionResponsibility>
 						Conducted a successful project migration process from using vanilla
 						HTML, CSS and JavaScript to more modern technologies, including
 						TypeScript, React and Styled Components.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Supported a set of components for the UI-Kit, which helped
-						standardize the design and speed up development.
+						Using the i18n library, I translated part of the application
+						interface into English.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
 						Introduced updated technologies and design solutions for websites,
