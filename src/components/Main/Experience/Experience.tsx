@@ -35,7 +35,7 @@ const Experience: FC = () => {
 			companyName: 'Profisites',
 			link: 'https://www.profisites.tj/',
 			position: 'Frontend Developer',
-			period: 'February 2022 - Present',
+			period: 'October 2021 - Present',
 			location: 'Dushanbe, Tajikistan (Remote)',
 			description: (
 				<div>
@@ -64,7 +64,7 @@ const Experience: FC = () => {
 			companyName: 'Aston',
 			link: 'https://astondevs.ru/',
 			position: 'Trainee Frontend Developer',
-			period: 'October 2021 - February 2022',
+			period: 'July 2021 - October 2021',
 			location: 'Kazan, Russia',
 			description: (
 				<div>
@@ -91,7 +91,7 @@ const Experience: FC = () => {
 			companyName: 'Self-education',
 			link: 'https://rustamkhuseinov.com/',
 			position: 'Frontend Developer',
-			period: 'January 2021 - October 2021',
+			period: 'January 2021 - August 2021',
 			location: 'Kazan, Russia',
 			description: (
 				<div>
