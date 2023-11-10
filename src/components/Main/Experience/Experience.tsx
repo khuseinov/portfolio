@@ -60,7 +60,7 @@ const Experience: FC = () => {
 			companyName: 'Aston',
 			link: 'https://astondevs.ru/',
 			position: 'Trainee Frontend Developer',
-			period: 'July 2021 - October 2021',
+			period: 'June 2021 - October 2021',
 			location: 'Kazan, Russia',
 			description: (
 				<div>
@@ -87,7 +87,7 @@ const Experience: FC = () => {
 			companyName: 'Self-education',
 			link: 'https://rustamkhuseinov.com/',
 			position: 'Frontend Developer',
-			period: 'January 2021 - August 2021',
+			period: 'October 2020 - June 2021',
 			location: 'Kazan, Russia',
 			description: (
 				<div>
