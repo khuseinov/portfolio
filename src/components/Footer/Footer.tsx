@@ -97,7 +97,7 @@ const Footer: FC = () => {
 					</svg>
 				</Icon>
 				<Icon
-					href='https://www.linkedin.com/in/rustamkhuseinov/'
+					href='https://www.linkedin.com/in/khuseinov/'
 					title='Linkedin'
 					target='_blank'
 					rel='nofollow noopener noreferrer'
