@@ -68,8 +68,11 @@ const TechStacks: FC = () => {
 		'Sass',
 		'Git',
 		'GitHub',
-		'Photoshop',
+		'PhotoShop',
 		'Figma',
+		'Node.js',
+		'Express',
+		'Next.js',
 		'Postman',
 		'Vercel',
 		'Netlify',
@@ -78,6 +81,7 @@ const TechStacks: FC = () => {
 		'Trello',
 		'RTL',
 		'Tailwind',
+		'Docker',
 	]
 	return (
 		<Container
@@ -115,11 +119,17 @@ const TechStacks: FC = () => {
 						<TechText>Styled-Components, Framer-Motion, Tailwind </TechText>
 						<TechText>Webpack, Vite, Parcel</TechText>
 						<TechText>Jest, RTL</TechText>
+						<TechText>Next.js</TechText>
+					</TechSkillGroup>
+					<TechSkillGroup>
+						<TechTitle>Back-end development</TechTitle>
+						<TechText>Node.js (Express)</TechText>
 					</TechSkillGroup>
 					<TechSkillGroup>
 						<TechTitle>Tools & Platforms</TechTitle>
 						<TechText>Git, GitHub</TechText>
 						<TechText>Figma, Photoshop</TechText>
+						<TechText>Docker</TechText>
 						<TechText>Postman, Jira, Trello</TechText>
 						<TechText>Vercel, Netlify</TechText>
 					</TechSkillGroup>

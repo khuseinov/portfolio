@@ -71,7 +71,7 @@ const AsideLeft: FC = () => {
 			<Icon
 				custom={3}
 				variants={iconAnimation}
-				href='https://t.me/R_Khuseinov'
+				href='https://t.me/rustamkhuseinov'
 				title='Telegram'
 				target='_blank'
 				rel='nofollow noopener noreferrer'

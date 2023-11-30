@@ -32,68 +32,83 @@ const Experience: FC = () => {
 
 	const tabs = [
 		{
-			companyName: 'Profisites',
-			link: 'https://www.profisites.tj/',
-			position: 'Frontend Developer',
-			period: 'October 2021 - Present',
-			location: 'Dushanbe, Tajikistan (Remote)',
+			companyName: 'My Facets | Мои Грани',
+			link: 'https://moigrani.ru/',
+			position: 'Frontend Software Engineer',
+			period: 'August 2022 - Present',
+			location: 'Moscow, Russia (Remote)',
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						Conducted a successful project migration process from using vanilla
-						HTML, CSS and JavaScript to more modern technologies, including
-						TypeScript, React and Styled Components.
+						Conducted a successful project migration process from using a
+						standard HTML, CSS and JavaScript to more modern technologies,
+						including TypeScript, React and styled components.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Using the i18n library, I translated part of the application
-						interface into English.
+						Multilingual support using i18n.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Introduced updated technologies and design solutions for websites,
-						which simplified development and reduced the time spent on selecting
-						products and placing orders by more than 50%.
+						Code coverage with tests (Jest + React Testing Library)
+					</DescriptionResponsibility>
+					<DescriptionResponsibility>
+						Improved the code-style on the project, which significantly reduced
+						the code-review time.
 					</DescriptionResponsibility>
 				</div>
 			),
 		},
 		{
-			companyName: 'Aston',
-			link: 'https://astondevs.ru/',
-			position: 'Trainee Frontend Developer',
-			period: 'June 2021 - October 2021',
-			location: 'Kazan, Russia',
+			companyName: 'Sosivio',
+			link: 'https://sosiv.io/',
+			position: 'Frontend Developer',
+			period: 'January 2021 - August 2021',
+			location: 'Tel Aviv, Israel (Remote)',
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						Participation in the Online JS Core intensive, which included
-						theoretical classes, practice and homework, which gave me a solid
-						foundation in JavaScript, HTML/CSS and working with Git.
+						Development of Dashboard in React + TypeScript in collaboration with
+						AI and backend teams.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Continuation of the internship as part of the Online
-						React-intensive, with an emphasis on developing web applications in
-						React and TypeScript, as well as participation in group projects.
+						Improved SEO optimization, eliminating many bugs and increasing
+						quality user experience.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Completion of an internship at the Laboratory, where, under the
-						guidance of experienced specialists, I developed not only technical
-						skills, but also soft skills, preparing for work on commercial
-						projects.
+						Creation of a scalable and reliable code base with 65%+ test
+						coverage
+					</DescriptionResponsibility>
+					<DescriptionResponsibility>
+						Development and support of a UI-Kit consisting of reusable
+						components to standardize the interface and speed up development.
 					</DescriptionResponsibility>
 				</div>
 			),
 		},
 		{
-			companyName: 'Self-education',
-			link: 'https://rustamkhuseinov.com/',
+			companyName: 'Crypton Studio',
+			link: 'https://crypton.studio/en/',
 			position: 'Frontend Developer',
-			period: 'October 2020 - June 2021',
-			location: 'Kazan, Russia',
+			period: 'May 2020 - January 2021',
+			location: 'Tomsk, Russia (Remote)',
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						In-depth study of JavaScript/TypeScript/React and related
-						technologies using them in your own projects.
+						Was one of the first developers who actively influenced the
+						implementation and effective using React when it first came to the
+						company
+					</DescriptionResponsibility>
+					<DescriptionResponsibility>
+						Optimized Git flow, making it more efficient and relevant to needs
+						project.
+					</DescriptionResponsibility>
+					<DescriptionResponsibility>
+						Improved the code-style of projects, expanding the ESLint and
+						prettier configuration with my own rules, increasing the level of
+						code quality and reducing the number of errors.
+					</DescriptionResponsibility>
+					<DescriptionResponsibility>
+						Participated in cross-code reviews, task estimation and sprint
+						planning
 					</DescriptionResponsibility>
 				</div>
 			),

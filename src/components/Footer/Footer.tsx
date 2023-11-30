@@ -23,7 +23,7 @@ const Footer: FC = () => {
 					</svg>
 				</Icon>
 				<Icon
-					href='https://t.me/R_Khuseinov'
+					href='https://t.me/rustamkhuseinov'
 					title='Telegram'
 					target='_blank'
 					rel='nofollow noopener noreferrer'
