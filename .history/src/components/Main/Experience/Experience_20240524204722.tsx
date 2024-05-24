@@ -46,22 +46,16 @@ const Experience: FC = () => {
 						code base, get rid of duplication and increase code readability;
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Helped the design team design the design system, participated in the
-						redesign of the internal UI kit and implemented StoryBook, which
-						made it possible to achieve consistency between the design and the
-						frontend part of the application;{' '}
+						Помогал команде дизайна проектировать дизайн-систему, участвовал в
+						редизайне внутреннего UI-кита и внедрил StoryBook, что позволило
+						добиться согласованности дизайна и frontend части приложения;
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the QA team, he was involved in the implementation and
-						writing of UI and integration tests on PlayWright, which made it
-						possible to cover the main user scenarios and basic components in
-						the UI kit;
+						Code coverage with tests (Jest + React Testing Library)
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the frontend department, I migrated the project from
-						Webpack to Vite, which made it possible to increase the speed of
-						launching and building the application by 2 times and reduce the
-						CI/CD completion time from 10 to 4 minutes;
+						Improved the code-style on the project, which significantly reduced
+						the code-review time.
 					</DescriptionResponsibility>
 				</div>
 			),

@@ -40,28 +40,19 @@ const Experience: FC = () => {
 			description: (
 				<div>
 					<DescriptionResponsibility>
-						When merging projects, he participated in the design of a new FSD
-						architecture, was involved in the transition from redux to
-						redux-toolkit, which made it possible to significantly reduce the
-						code base, get rid of duplication and increase code readability;
+						Conducted a successful project migration process from using a
+						standard HTML, CSS and JavaScript to more modern technologies,
+						including TypeScript, React and styled components.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Helped the design team design the design system, participated in the
-						redesign of the internal UI kit and implemented StoryBook, which
-						made it possible to achieve consistency between the design and the
-						frontend part of the application;{' '}
+						Multilingual support using i18n.
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the QA team, he was involved in the implementation and
-						writing of UI and integration tests on PlayWright, which made it
-						possible to cover the main user scenarios and basic components in
-						the UI kit;
+						Code coverage with tests (Jest + React Testing Library)
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the frontend department, I migrated the project from
-						Webpack to Vite, which made it possible to increase the speed of
-						launching and building the application by 2 times and reduce the
-						CI/CD completion time from 10 to 4 minutes;
+						Improved the code-style on the project, which significantly reduced
+						the code-review time.
 					</DescriptionResponsibility>
 				</div>
 			),

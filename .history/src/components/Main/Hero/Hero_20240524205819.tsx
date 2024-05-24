@@ -59,7 +59,9 @@ const Hero: FC = () => {
 			>
 				Resume
 			</OpenResume> */}
-			<Button href='mailto:rustamjon.khuseinov@gmail.com'>Contact me</Button>
+			<Button href='mailto:rustamjon.khuseinov@gmail.com'>
+				Send a message
+			</Button>
 		</Container>
 	)
 }

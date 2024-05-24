@@ -3,6 +3,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 import Experience from './Experience/Experience'
 import Hero from './Hero/Hero'
+import Projects from './Projects/Projects'
 import TechStacks from './TechStacks/TechStacks'
 import { Container } from './styled'
 
@@ -13,7 +14,7 @@ const Main: FC = () => {
 			<About />
 			<Experience />
 			<TechStacks />
-			{/* <Projects /> */}
+			<Projects />
 			<Contact />
 		</Container>
 	)

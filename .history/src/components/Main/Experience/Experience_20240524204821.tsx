@@ -58,10 +58,8 @@ const Experience: FC = () => {
 						the UI kit;
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the frontend department, I migrated the project from
-						Webpack to Vite, which made it possible to increase the speed of
-						launching and building the application by 2 times and reduce the
-						CI/CD completion time from 10 to 4 minutes;
+						Improved the code-style on the project, which significantly reduced
+						the code-review time.
 					</DescriptionResponsibility>
 				</div>
 			),

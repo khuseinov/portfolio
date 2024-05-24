@@ -52,16 +52,11 @@ const Experience: FC = () => {
 						frontend part of the application;{' '}
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the QA team, he was involved in the implementation and
-						writing of UI and integration tests on PlayWright, which made it
-						possible to cover the main user scenarios and basic components in
-						the UI kit;
+						Code coverage with tests (Jest + React Testing Library)
 					</DescriptionResponsibility>
 					<DescriptionResponsibility>
-						Together with the frontend department, I migrated the project from
-						Webpack to Vite, which made it possible to increase the speed of
-						launching and building the application by 2 times and reduce the
-						CI/CD completion time from 10 to 4 minutes;
+						Improved the code-style on the project, which significantly reduced
+						the code-review time.
 					</DescriptionResponsibility>
 				</div>
 			),

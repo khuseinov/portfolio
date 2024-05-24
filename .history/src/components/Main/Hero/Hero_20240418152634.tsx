@@ -2,13 +2,13 @@ import { FC } from 'react'
 import {
 	Container,
 	Description,
+	OpenResume,
 	Prefix,
 	PrimaryTitle,
 	SecondTitle,
 } from './styled'
 
 import { motion } from 'framer-motion'
-import { Button } from '../Contact/styled'
 const textAnimation = {
 	hidden: {
 		y: 0,
@@ -49,7 +49,7 @@ const Hero: FC = () => {
 					on personal project to upgrade my skills and be more efficiant.
 				</div>
 			</Description>
-			{/* <OpenResume
+			<OpenResume
 				as={motion.a}
 				custom={4}
 				variants={textAnimation}
@@ -58,8 +58,7 @@ const Hero: FC = () => {
 				target='_blank'
 			>
 				Resume
-			</OpenResume> */}
-			<Button href='mailto:rustamjon.khuseinov@gmail.com'>Contact me</Button>
+			</OpenResume>
 		</Container>
 	)
 }

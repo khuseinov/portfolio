@@ -8,7 +8,6 @@ import {
 } from './styled'
 
 import { motion } from 'framer-motion'
-import { Button } from '../Contact/styled'
 const textAnimation = {
 	hidden: {
 		y: 0,
@@ -59,7 +58,6 @@ const Hero: FC = () => {
 			>
 				Resume
 			</OpenResume> */}
-			<Button href='mailto:rustamjon.khuseinov@gmail.com'>Contact me</Button>
 		</Container>
 	)
 }
