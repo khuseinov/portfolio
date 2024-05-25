@@ -78,11 +78,11 @@ const Header: FC = () => {
 			href: '#skills',
 			text: 'Skills',
 		},
-		// {
-		// 	ref: useRef(null),
-		// 	href: '#projects',
-		// 	text: 'Projects',
-		// },
+		{
+			ref: useRef(null),
+			href: '#projects',
+			text: 'Projects',
+		},
 		{
 			ref: useRef(null),
 			href: '#contact',
